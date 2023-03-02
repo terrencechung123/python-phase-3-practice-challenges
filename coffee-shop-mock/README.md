@@ -55,7 +55,7 @@ comments describing your progress.
 Write the following methods in the classes in the files provided. Feel free to
 build out any helper methods if needed.
 
-### Initializers, Readers, and Writers
+### Initializers and Properties
 
 #### Customer
 
@@ -83,7 +83,7 @@ build out any helper methods if needed.
   - Returns the price for a coffee
   - Price must be a number between 1 and 10, inclusive
 
-### Object Relationships
+### Object Relationship Methods and Properties
 
 #### Order
 
