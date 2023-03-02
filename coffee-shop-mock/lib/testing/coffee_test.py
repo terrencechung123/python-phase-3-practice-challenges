@@ -89,6 +89,15 @@ class TestCoffee:
         assert (isinstance(coffee.customers()[0], Customer))
         assert (isinstance(coffee.customers()[1], Customer))
 
+    def test_get_number_of_orders(self):
+        '''test num_orders()'''
+        coffee = Coffee("Mocha")
+        customer = Customer('Steve')
+        order_1 = Order(customer, coffee, 2)
+        order_2 = Order(customer, coffee, 5)
+
+        assert (coffee.num_orders() == 2)
+
     def test_average_price(self):
         '''test average_price()'''
         coffee = Coffee("Mocha")
