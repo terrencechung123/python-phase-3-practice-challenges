@@ -1,6 +1,6 @@
-# Object Relations Code Challenge - Coffee Shop
+# Object Relations Code Challenge - National Park Visits
 
-For this assignment, we'll be working with a Coffee shop-style domain.
+For this assignment, we'll be working with a national park planner-style domain.
 
 We have three models: `Coffee`, `Customer`, and `Order`.
 
