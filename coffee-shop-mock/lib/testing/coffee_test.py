@@ -9,30 +9,30 @@ class TestCoffee:
 
     def test_has_name(self):
         '''coffee is initialized with a name'''
-        coffee = coffee("Mocha")
+        coffee = Coffee("Mocha")
         assert (coffee.name == "Mocha")
 
     def test_name_is_string(self):
         '''coffee is initialized with a name of type str'''
-        coffee = coffee("Mocha")
+        coffee = Coffee("Mocha")
         assert (isinstance(coffee.name, str))
 
     def test_name_setter(self):
         '''Cannot change the name of the coffee'''
-        coffee = coffee("Mocha")
+        coffee = Coffee("Mocha")
         coffee.name = "Peppermint Mocha"
         assert (coffee.name == "Mocha")
 
-    # def test_raise_exception_for_changing_name(self):
-    #     '''raise exception for trying to change name after initialization'''
-    #     coffee = coffee("Peppermint Mocha")
-    #     with pytest.raises(Exception):
-    #         coffee.name = 'Banana'
+    def test_raise_exception_for_changing_name(self):
+        '''raise exception for trying to change name after initialization'''
+        coffee = Coffee("Peppermint Mocha")
+        with pytest.raises(Exception):
+            coffee.name = 'Banana'
 
     def test_has_many_orders(self):
         '''coffee has many orders.'''
         coffee = Coffee("Hazelnut Latte")
-        coffee_2 = coffee("Mocha")
+        coffee_2 = Coffee("Mocha")
         customer = Customer('Steve')
         order_1 = Order(customer, coffee, 2)
         order_2 = Order(customer, coffee, 5)
